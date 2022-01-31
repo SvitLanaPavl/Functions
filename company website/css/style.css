@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+margin: 0px;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+
+}
+
+#header img {
+height: 150px;
+width: 250px;
+position: relative;
+float: left;
+}
+
+button {
+
+}
+
+button a {
+    text-decoration: none;
+}
