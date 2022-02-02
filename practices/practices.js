@@ -103,15 +103,42 @@ for (let year = 2014; year <= 2050; year ++) {
 
 //number guess game
 const guessGame = () => {
-    let randNum = Math.floor(Math.random()*10);
+    let randNum = Math.ceil(Math.random()*10);
     let userNum = document.getElementById('number');
     let output = document.getElementById('output');
     if (randNum === userNum.value) {
         output.innerHTML = 'Good work!'
     }
     else {
-        output.innerHTML = 'Sorry! Not matched!'
+        output.innerHTML = `Sorry! Not matched! The number was ${randNum}`
     }
 }
 
+//calculating days left until next Christmas
+
+const daysLeft = () => {
+let chmas = new Date(now.getFullYear(), 11, 25);
+if (now.getMonth() === 11 && now.getDate()>25) {
+    chmas.setFullYear(chmas.getFullYear()+1)
+}
+let oneDay = 1000*60*60*24;
+console.log(Math.ceil((chmas.getTime() - now.getTime())/(oneDay)) + ' days left until Christmas!');
+}
+
+console.log(daysLeft())
+
+//multiplication and division of two numbers
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
+const res = document.getElementById('res');
+
+const multiply = () => {
+const mult = num1.value * num2.value;
+res.innerHTML = mult;
+}
+
+const divide = () => {
+const div = num1.value / num2.value;
+res.innerHTML = div;
+}
 

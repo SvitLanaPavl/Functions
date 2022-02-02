@@ -5,12 +5,12 @@
        <title>Display the time in the right format</title> 
     </head>
     <body>
-        <h1>Current date</h1>
+        <h2>Current date</h2>
         <p id='curdate'></p>
         <p>Click this button to print the current page</p>
         <input type='button' value='print' onclick='printTheCurrentPage()'/>
 
-        <h1>Finding the area of a triangle</h1>
+        <h2>Finding the area of a triangle</h2>
         <label>Input the value of the side 1</label>
         <input type='number' placeholder='enter the value of side 1' id='side1'>
         <br>
@@ -23,11 +23,31 @@
         <button onclick='getArea()'>Get the result</button>
         <p> Area of Triangle is <span id='display'></span></p>
 
-    <h1>Rotating the string</h1>
+    <h2>Rotating the string</h2>
     <input id='inputEl' placeholder='enter word' type='text'>
     <p id='stringResult'></p>
     <button onclick='animateString()'>Rotate</button>
     <button onclick='clear()'>Clear</button>
+
+    <h2>Find the leap year</h2>
+    <input type='number' placeholder='Enter the year' id='year'>
+    <button onclick='leapYear()'>Enter</button>
+    <p id='lonyear'></p>
+
+    <h2>Number Guess game</h2>
+    <label>Enter any number from 1 to 10</label>
+    <input type='number' min='1' max='10' id='number'>
+    <button onclick='guessGame()'>Enter</button>
+    <p id='output'></p>
+
+    <h2>Multiplication and Division</h2>
+    <Label>Input number 1</Label>
+    <input type='number' id='num1'>
+    <Label>Input number 2</Label>
+    <input type='number' id='num2'>
+    <button onclick='multiply()'>Multiply</button>
+    <button onclick='divide()'>Divide</button>
+    <p>The result is <span id='res'></span></p>
         <script src='practices.js'></script>
     </body>
 </html>
