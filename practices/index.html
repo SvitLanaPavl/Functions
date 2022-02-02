@@ -5,6 +5,29 @@
        <title>Display the time in the right format</title> 
     </head>
     <body>
+        <h1>Current date</h1>
+        <p id='curdate'></p>
+        <p>Click this button to print the current page</p>
+        <input type='button' value='print' onclick='printTheCurrentPage()'/>
+
+        <h1>Finding the area of a triangle</h1>
+        <label>Input the value of the side 1</label>
+        <input type='number' placeholder='enter the value of side 1' id='side1'>
+        <br>
+        <label>Input the value of the side 2</label>
+        <input type='number' placeholder='enter the value of side 2' id='side2'>
+        <br>
+        <label>Input the value of the side 3</label>
+        <input type='number' placeholder='enter the value of side 3' id='side3'>
+        <br>
+        <button onclick='getArea()'>Get the result</button>
+        <p> Area of Triangle is <span id='display'></span></p>
+
+    <h1>Rotating the string</h1>
+    <input id='inputEl' placeholder='enter word' type='text'>
+    <p id='stringResult'></p>
+    <button onclick='animateString()'>Rotate</button>
+    <button onclick='clear()'>Clear</button>
         <script src='practices.js'></script>
     </body>
 </html>
