@@ -142,3 +142,37 @@ const div = num1.value / num2.value;
 res.innerHTML = div;
 }
 
+//Converting Celsius to Fahrenheit
+
+function convert () {
+    let celsius = document.getElementById('celsius').value;
+    let celsOut = document.getElementById('celsOut');
+    let fahrenheit = document.getElementById('fahrenheit');
+    let convert = (celsius * 9/5) + 32;
+    celsOut.innerHTML = celsius;
+    fahrenheit.innerHTML = convert;
+}
+
+console.log(document.URL);
+
+//getting the extension of the file
+filename = 'index.html';
+console.log(filename.split('.').pop());
+filename = 'app.js';
+console.log(filename.split('.').pop());
+
+
+//get the absolute difference between the given number and number 13
+function difference() {
+    let number = 13;
+    let givNum = document.getElementById('inpnum').value;
+let outdifference = document.getElementById('difference');
+
+if(givNum <= 13) {
+    return outdifference.innerHTML = number - givNum;
+}
+else {
+return outdifference.innerHTML = (givNum - 13) * 2;
+}
+
+}
